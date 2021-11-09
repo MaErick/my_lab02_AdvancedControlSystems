@@ -19,6 +19,3 @@ plot(t,x1)
 plot(t,x2)
 legend('u','x1','x2');
 grid
-text (15, 20, strcat ('\leftarrow u = {2/\surd\pi',
-' {\fontsize{16}\int_{\fontsize{8}0}^{\fontsize{8}x}}',
-' e^{-t^2} dt} = 0.6175'))
