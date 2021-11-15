@@ -24,14 +24,15 @@ options1=odeset('RelTol', 0.001);
 xsol=x  ; 
   xtilde=xsol(:,1)-sin(pi*t/2);
   u1=(1.5*(xsol(:,2)).^2.*cos(3*xsol(:,1))-((pi.^2)/4).*(sin(pi*t/2))-20*(xsol(:,2)-(pi/2).*(cos(pi*t/2)))-(0.5.*(xsol(:,2)).^2.*abs(cos(3.*xsol(:,1)))+0.1).*sat(((xsol(:,2)-(pi/2).*(cos(pi.*t/2))+20.*(xsol(:,1)-sin(pi.*t/2)))),d));
-  
+ s1=x(:,2)-cos(0.25*pi*t)*0.25*pi+20*(x(:,1)-sin(0.25*pi*t));  
 xlabel('Time(s)')
 ylabel('Amplitude')
 hold on
 plot(t, x(:,1))
 plot(t,x(:,2),'-.')
 legend('x1','x2');
-
+figure,
+plot(t,s1)
 figure,
  plot(t,u1)
  legend('u');

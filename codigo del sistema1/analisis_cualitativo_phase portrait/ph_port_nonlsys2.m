@@ -2,7 +2,7 @@
   clear all;
   clc;
   a=1;
-k=1000;
+k=1;
 %backstepping control law
 ##u=(-2-a*cos(x(1)))*(x(1)+a*sin(x(1))+x(2))-x(1)-k*(x(2)+2*x(1)+a*sin(x(1)));
 

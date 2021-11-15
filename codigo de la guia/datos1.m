@@ -40,6 +40,6 @@ u=(-2-a*cos(x(1)))*(x(1)+a*sin(x(1))+x(2))-x(1)-k*(x(2)+2*x(1)+a*sin(x(1)));
 %model dynamics
 xdot=[x(1)+b*sin(x(1))+x(2);
 u];
-fprintf(fileID,'%10.6f %10000.6f %10.6f %10000.6f \n',t,u,x(1),x(2));
+fprintf(fileID,'%10.6f %10.6f %10.6f %10.6f \n',t,u,x(1),x(2));
 ##
 endfunction
